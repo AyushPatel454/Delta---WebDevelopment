@@ -1,0 +1,8 @@
+HTML is not Case Sensitive
+
+<html> = <HTML>
+<p> = <P>
+<head> = <HEAD>
+<body> = <BODY>
+
+** JavaScript is not case Sensitive.

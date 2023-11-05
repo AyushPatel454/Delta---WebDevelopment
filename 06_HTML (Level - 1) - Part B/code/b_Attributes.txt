@@ -1,0 +1,6 @@
+Attributes
+Attributes are used to add information  to the tag.
+
+Examples:
+<html lang="en">
+<ol type="a">

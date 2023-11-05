@@ -1,0 +1,11 @@
+Comments in HTML
+
+Syntax: <!-- This is your comment. -->
+
+Comments are not part of code.
+It is used for understanding of code.
+
+Others:
+Resources: MDN website.
+           In which we can understand more topics like HTML, CSS, JAVASCRIPT, etc.
+           It show detailed information regrading particular topic like tables in HTML, background in CSS, etc.
