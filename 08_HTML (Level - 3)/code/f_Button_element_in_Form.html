@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Element in Form</title>
+</head>
+<body>
+    <button>Out side Form button</button>
+    <form action="/server">
+        <div>
+            <label for="anything">
+                Type any thing:
+            </label>
+            <input id="anything" placeholder="no type">
+        </div>
+    
+        <div>
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" placeholder="text">
+        </div>
+
+        <div>
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" id="email" placeholder="email">
+        </div>
+
+        <div>
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" placeholder="password">
+        </div>
+
+        <div>
+            <label for="age">
+                Age:
+            </label>
+            <input type="number" id="age" placeholder="number">
+        </div>
+
+        <button>Submit</button>
+        <button>Hello</button>
+    </form>
+
+    <p>when we click on submit button then action perform which is associated with action of form.</p>
+    <p><b><i>Default action of all button which is descibe in form tags is submit form data.</i></b></p>
+    <p>In above example you can see... If your are click on Submit or Hello button your form data is submitted to the given associtated action file.</p>
+
+    <h2>Types of buttons in form.</h2>
+    <ul>
+        <li>Submit - submit form data.</li>
+        <li>Button - Do something.</li>
+        <li>Reset - for reset form. remove all enter text.</li>
+    </ul>
+
+    <form action="/types_of_button">
+        <div>
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" placeholder="text">
+        </div>
+
+        <div>
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" placeholder="password">
+        </div>
+
+        <button type="submit">Submit</button> <br>
+        <button type="button">Button</button> Nothing can happen. <br>
+        <button type="reset">Reset</button>
+    </form>
+
+    <h2>Button using input.</h2>
+    <i>*Not Good way to display buttons.</i>
+    <br>
+    <br>
+    <form action="/button_using_input">
+        <div>
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" placeholder="text">
+        </div>
+
+        <input type="button" value="Click me"> - type is submit <b>Nothing happen</b> <br>
+        <input type="submit" value="Submit"> - <b>Submit data</b>
+    </form>
+</body>
+</html>

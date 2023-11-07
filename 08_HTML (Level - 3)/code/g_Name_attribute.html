@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Attribute in Input</title>
+</head>
+<body>
+    <h3>Name attribute is used to assign name for input which is used when we submit the form so server side in backend side we acces input values with help of <i>Name Attribut.</i></h3>
+    <p>If <b>Form method </b> = <b><i>GET</i></b> - then all form data are display in URL <b>UnSecure method for send sensitive information.</b></p>
+    <p>If <b>Form method </b> = <b><i>POST</i></b> - data <b>NOT</b> display in URL <b>Secure method for send sensitive information.</b></p>
+
+    <br>
+    <br>
+    <p>By default form method is = <b>GET</b></p>
+    <form action="/server" method="get">
+        <div>
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" placeholder="text" name="username">
+        </div>
+
+        <div>
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" placeholder="password" name="password">
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Let's Do Great Task</h2>
+    <h3>Search on YouTube.</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="search" placeholder="Search on YouTube.">
+        <button>Search on YouTube.</button>
+    </form>
+    <h3>Search on Google.</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="search" placeholder="Search on Google.">
+        <button>Search on Google.</button>
+    </form>
+</body>
+</html>

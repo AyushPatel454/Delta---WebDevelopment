@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox in Form</title>
+</head>
+<body>
+    <h2>CheckBox</h2>
+    <form action="/server">
+        <input type="checkbox" id="math" name="subject" value="Math" checked>
+        <label for="math">Math</label> <br>
+        
+        <input type="checkbox" id="scinece" name="subject" value="Scinece">
+        <label for="scinece">Scinece</label> <br>
+
+        <input type="checkbox" id="english" name="subject" value="English">
+        <label for="english">English</label> <br>
+
+        <button>Submit</button>
+    </form>
+
+    <b>Name attribute value is same for all checkbox for grouping the checkbox.</b> <br><br>
+
+    <b>Note:</b>
+    If we checked checkbox and click on submit button then in url we can see the value of checkbox is <b><i>"age=on".</i></b> if we not assign value of input type radio. <br>
+    Other wise no information pass in URL.
+</body>
+</html>
