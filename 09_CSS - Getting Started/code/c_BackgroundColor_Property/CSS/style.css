@@ -1,0 +1,16 @@
+h1  {
+    color: blue;
+    background-color: lightsalmon;
+}
+
+p {
+    color: red;
+    background-color: cornsilk;
+}
+
+button {
+    color: coral;
+    background-color: black;
+    /* background: blue; */
+    /* background is short hand property but you can use insteda of background-color */
+}
