@@ -1,0 +1,125 @@
+/* ---> Universal Selector */
+/* Used to select and apply styles to all elements on a webapage (document). */
+
+* {
+    font-family:'Courier New';
+}
+
+/* ---> Element Selector */
+/* h3 {
+    color: purple;
+} */
+
+h1,h3 {
+    color: #b92b27;
+}
+
+/* ---> ID Selector */
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+/* ---> Class Selector */
+.upvote {
+    background-color: rgb(0, 255, 164);
+}
+
+/* ---> Descendant Selector */
+/* Hierarchy wise select element. */
+/* Goes Outer Element --to--> Inner element. */
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a{
+    color: hotpink;
+}
+
+/* ---> Adjacent Sibling Combinator */
+/* Peragraph pachhi tart Heading3 ave che ene under line appi daie. */
+p + h3 {
+    text-decoration: underline;
+}
+/* upvote class button pachhi je button ave  che (Answer vadu button) teno colour blueish jevo kari daie. */
+.upvote + button {
+    background-color: cornflowerblue;
+}
+
+/* ---> Child Combinator */
+/* div no direct child input hoy eno background colour change kari daie. */
+/* 1 j level undar jai sakie. */
+/* Descendant selector is better then child selector. */
+div > input {
+    background-color: darksalmon;
+}
+
+/* ---> Attribute Selector */
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+input[type] {
+    background-color: ghostwhite;
+}
+
+/* ===> Pseudo Code */
+
+/* ---> Hover */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: overline;
+}
+
+/* ---> Active */
+button:active {
+    background-color: hotpink;
+    color: Greens;
+}
+
+p:active {
+    color: red;
+}
+
+/* ---> Checked */
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+/* ---> n-th type */
+.post:nth-of-type(2n) {
+    background-color: rgb(200, 166, 231);
+}
+
+/* ===> Cascading & Specification */
+/* (Lastest modification are apply.) */
+h3 {
+    color: yellow;
+}
+
+h3 {
+    color: blue;
+}
+
+/* ===> !important */
+nav {
+    background-color: antiquewhite !important; /* This property is fiexd on nav. It can not change if we cascade or if write in inline css. */
+}
+
+nav {
+    background-color: blueviolet;
+}
