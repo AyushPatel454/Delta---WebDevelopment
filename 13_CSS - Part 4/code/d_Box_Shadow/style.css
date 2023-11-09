@@ -1,0 +1,20 @@
+span {
+    font-weight: normal;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    box-shadow: 10px 10px 8px grey;
+    margin: 0px auto;
+}
+
+#text_shadow {
+    text-shadow: 4px 4px 4px grey;
+    border: 2px dashed green;
+    padding: 10px;
+    text-align: center;
+}

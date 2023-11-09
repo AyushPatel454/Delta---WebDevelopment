@@ -1,0 +1,18 @@
+.rgba {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0.5);
+    margin: 10px;
+}
+
+#hexa {
+    height: 200px;
+    width: 200px;
+    background-color: #00ff0095;
+    margin: 10px;
+}
+
+#opacity {
+    background-color: yellow;
+    opacity: 0.5;
+}

@@ -1,0 +1,71 @@
+section {
+    margin-top: 100px;
+}
+
+div {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+div:nth-of-type(2n) {
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n) {
+    background-color: #ebb02d;
+}
+
+h1, h2, h3,p {
+    text-align: center;
+}
+
+/* ===> Transform */
+/* ---> Rotate */
+#one {
+    transform: rotate(-30deg);
+    transform: rotate(30deg); /* clock wise */
+}
+
+/* ---> Scale */
+#two {
+    transform: scale(2); /*Height & Width both double.*/
+    transform: scale(2,2); /*Height & Width both double.*/
+
+    transform: scale(0.5); /* Height & Width both half */
+    transform: scale(0.5,0.5); /* Height & Width both half */
+
+    transform: scaleX(0.5); /*Height same but Width double. */
+    transform: scaleY(2); /*Width same but Height double. */
+
+    transform: scale(0.5,1); /*Width = half & height as it is.*/
+}
+
+/* ---> Translate */
+#three {
+    transform: translateX(100px); /* Move 100px right */
+    transform: translateY(100px); /* Move 100px down */
+    
+    transform: translate(300px, 60px); /* Move 300px right & 60px down */
+}
+
+/* --> Skew */
+#four_a {
+    transform: skewX(30deg); /* Skew 30deg in X-axis */
+}
+
+#four_b {
+    transform: skewY(-10deg);
+}
+
+#four_c {
+    transform: skew(30deg, -10deg);
+}
+
+/* ---> Rotate & Translate */
+#five {
+    transform: rotate(45deg) translate(100px,250px) scale(2);
+}
