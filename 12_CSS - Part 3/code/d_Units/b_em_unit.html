@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em unit</title>
+    <style>
+        #outer {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: pink;
+            font-size: 16px;
+        }
+        #inner {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            font-size: 2em; /* 2 * 16px = 32px  (Double of Parent font-size)*/
+            padding: 1em; /* padding = 1 * font-size */ /* padding relative to font-size. */
+        }
+
+        button {
+            font-size: 50px;
+            border-radius: 15px;
+            border: 5px solid green;
+            /* ---> Not so good */
+            /* padding-left: 20px;
+            padding-right: 20px; */
+
+            /* ---> Jetlo moto font-size thay jay etli padding ni space pan vadhe & jetlo nano font-size thay jay etli padding ni space pan ghate. */
+            /* Best way. */
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        /* Problem of EM ---> snowball effect */
+        .snowabll_sction {
+            font-size: 15px;
+        }
+
+        .snowball_div {
+            font-size: 2em;
+        }
+
+        /* Solution of snowball effect ---> rem unit */
+        .snowabll_solution_sction {
+            font-size: 15px;
+        }
+
+        .snowball_solution_div {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Em - Unit</h1>
+    <p>Relative to: Font size of parent, in the case of typographical properties like <b>font-size</b>, and font size of the element itself, in the case of otehr properties like <b>width, padding, margin.</b></p>
+    <img src="em_unit.png" alt="em_unit_image">
+    <hr>
+    <div id="outer">
+        This is Outer.
+        <div id="inner">
+            This is Inner.
+        </div>
+    </div>
+
+    <p>
+        <b>Jetlo moto font-size thay jay etli padding ni space pan vadhe & jetlo nano font-size thay jay etli padding ni space pan ghate.</b>
+    </p>
+    <button>Click Me</button>
+
+    <hr>
+    <h1>Drawback of Em</h1>
+    <p><b>Snowball effect</b> in nested element.</p>
+    <section class="snowabll_sction">
+        section - 15px
+        <div class="snowball_div">
+            div 1 - 30px
+            <div class="snowball_div">
+                div 2 - 60px
+                <div class="snowball_div">
+                    div 3 - 120px
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <h1>Rem - Unit</h1>
+    <p>For avoid above snowball effect we use Rem - unit.</p>
+    <section class="snowabll_solution_sction">
+        section - 15px
+        <div class="snowball_solution_div">
+            div 1 - 30px
+            <div class="snowball_solution_div">
+                div 2 - 30px
+                <div class="snowball_solution_div">
+                    div 3 - 30px
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <h2>Summary</h2>
+    <ul>
+        <li><b>Em</b> - unit is relative to font-size of parent.</li>
+        <li><b>Rem</b> - unit is relative to font-size of root element.</li>
+    </ul>
+</body>
+</html>

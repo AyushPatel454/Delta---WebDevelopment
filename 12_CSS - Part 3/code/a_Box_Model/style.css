@@ -1,0 +1,110 @@
+div {
+    height: 200px;
+    width: 600px;
+    background-color: rgba(130, 130, 220, 0.633);
+    /* ---> Border Property */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+
+    /* ---> Border Short Hand */
+    border: 5px solid yellow;
+
+    /* border-left-color: blue;
+    border-left-style: dashed; */
+
+    border-top: 5px dashed blue;
+
+    /* ---> Padding */
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+    /* ---> Short Hand of Padding */
+    padding: 20px 50px 20px 10px;
+}
+
+h1 {
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: green; */
+
+    border: 2px dashed green;
+}
+
+/* ---> Border-Radius */
+.borderRadius {
+    border: 5px solid black;
+    border-radius: 30px;
+    border-top-right-radius: 50%;
+}
+
+.borderRadius_percentage {
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 0%;
+}
+
+/* ---> Padding */
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    /* ---> Individual Padding */
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+
+    /* ===> Short Hand of Padding. */
+    /* ---> All Side 25px padding (top,right,bottom,left)*/
+    padding: 25px;
+
+    /* ---> top-bottom: 10px & left-right: 25px*/
+    padding: 10px 25px;
+
+    /* ---> top: 10px , left-right: 25px, bottom: 20px */
+    padding: 10px 25px 20px;
+
+    /* ---> top: 10px , right: 25px, bottom: 15px, right: 20px*/
+    padding: 10px 25px 15px 20px;
+    padding: 0px 25px 30px 20px;
+}
+
+/* ---> Margin */
+div {
+    margin-bottom: 25px;
+    margin-left: 50px;
+
+    
+    /* top-bottom & left-right */
+    margin: 20px 50px;
+    
+    /* top | left & right | bottom */
+    margin: 20px 50px 100px;
+
+    /* top | right | bottom | left  */
+    margin: 0px 0px 25px 50px;
+
+    /* ---> Make all div center. */
+    /* left & right margin = auto */
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 10px auto;
+
+    margin: 10px auto 30px;
+
+    margin: 10px auto 30px auto;
+}
+
+/* Heading Text contain default margin. */
+/* Let's make all heading text margin 0px */
+h1 {
+    margin: 0px;
+}

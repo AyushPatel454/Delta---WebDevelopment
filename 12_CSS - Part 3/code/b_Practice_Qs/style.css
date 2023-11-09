@@ -1,0 +1,26 @@
+.container {
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+.light {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    /* apply margin and make it center */
+    margin: 10px auto;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
