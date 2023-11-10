@@ -1,0 +1,125 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.fixed_on_screen {
+    position: fixed;
+    background-color: aqua;
+    top: -10px;
+    left: -10px;
+    padding: 10px;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 4px 4px 4px black;
+    z-index: 10;
+    transition: 0.5s;
+    transform: scale(0.8);
+}
+
+.fixed_on_screen:hover {
+    box-shadow: 6px 6px 6px black;
+}
+
+.fixed_on_screen .navigation {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: hotpink;
+    box-shadow: 4px 4px black;
+    padding: 4px 8px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fixed_on_screen .navigation:hover {
+    box-shadow: 0px 0px black;
+}
+
+#starting ul {
+    left: 20px;
+}
+
+#starting h1, h1, h2, p, td {
+    text-align: center;
+}
+
+table {
+    margin: 10px auto;
+}
+
+.container {
+    background-color: azure;
+    height: 400px;
+    width: 80%;
+    display: flex;
+    border: 2px solid black;
+    margin: 4px auto;
+}
+
+.item {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.section {
+    position: relative;
+}
+
+/* select 1st immediate (direct) h1 in section */
+section > h1{
+    background-color: rgb(251, 255, 0);
+    width: 40%;
+    margin: 0 auto;
+    padding: 8px 2px;
+    border-radius: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.section .sticky_box {
+    position: sticky;
+    top: 30px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2px 6px;
+    background-color: aqua;
+    border-radius: 50px 0 50px 0;
+    text-align: center;
+    transform: scale(0.8);
+}
+
+.section .change {
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: rgb(187, 0, 255);
+    border-radius: 50px 0 50px 0;
+    width: 80%;
+    color: white;
+    text-align: center;
+    padding: 4px 2px;
+}
+
+.increase_width {
+    width: 800px;
+}
+
+#flex_basis_row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* align-content: baseline; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: space-between; */
+}
+
+#flex_basis_coloumn {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

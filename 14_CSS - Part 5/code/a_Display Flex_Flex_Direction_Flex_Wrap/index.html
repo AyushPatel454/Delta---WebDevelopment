@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-decoration: underline;">Flex-Direction & Flex-Wrap</h1>
+    <h1>Flexbox Playground</h1>
+    <h2>display: block</h2>
+    <div class="container_top">
+        <div style="background-color: violet;">violet-1</div>
+        <div style="background-color: indigo;">indigo-2</div>
+        <div style="background-color: blue;">blue-3</div>
+        <div style="background-color: green;">green-4</div>
+        <div style="background-color: yellow;">yellow-5</div>
+        <div style="background-color: orange;">orange-6</div>
+        <div style="background-color: red;">red-7</div>
+    </div>
+
+    <hr>
+
+    <section class="section">
+        <h2>flex-direction: row</h2>
+        <p><b>(Main Axis, left to right)</b></p>
+        <p>Item height as it is only <b>width change.</b></p>
+        <p class="wrap_property"><b>Flex-wrap: nowrap (default)</b></p>
+        <p>width can be decrease automatic.</p>
+        <div id="row_nowrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap</b></p>
+        <p>height & width as it is. automatic adjust.</p>
+        <div id="row_wrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap-reverse</b></p>
+        <p>height & width as it is. automatic adjust. <b>(Main axis reverse direction  | Mirror of main axis of wrap.)</b></p>
+        <div id="row_wrap_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+    
+    <section class="section">
+        <h2>flex-direction: row-reverse</h2>
+        <p><b>(Main Axis, right to left)</b></p>
+        <p>Item height as it is only <b>width change.</b></p>
+        <p class="wrap_property"><b>Flex-wrap: nowrap (default)</b></p>
+        <p>width can be decrease automatic.</p>
+        <div id="row_reverse_nowrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap</b></p>
+        <p>height & width as it is. automatic adjust.</p>
+        <div id="row_reverse_wrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap-reverse</b></p>
+        <p>height & width as it is. automatic adjust. <b>(Main axis reverse direction  | Mirror of main axis of wrap.)</b></p>
+        <div id="row_reverse_wrap_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+    
+    <section class="section">
+        <h2>flex-direction: column</h2>
+        <p><b>(Cross Axis, top to bottom)</b></p>
+        <p>Item Width as it is only <b>Height change.</b></p>
+        <p class="wrap_property"><b>Flex-wrap: nowrap (default)</b></p>
+        <p>Height can be decrease automatic.</p>
+        <div id="coloumn_nowrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap</b></p>
+        <p>height & width as it is. automatic adjust.</p>
+        <div id="coloumn_wrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap-reverse</b></p>
+        <p>height & width as it is. automatic adjust. <b>(cross axis reverse direction | Mirror of cross axis of wrap.)</b></p>
+        <div id="coloumn_wrap_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+    
+    <section class="section">
+        <h2>flex-direction: column-reverse</h2>
+        <p><b>(Cross Axis, bottom to top)</b></p>
+        <p>Item Width as it is only <b>Height change.</b></p>
+        <p class="wrap_property"><b>Flex-wrap: nowrap (default)</b></p>
+        <p>Height can be decrease automatic.</p>
+        <div id="coloumn_reverse_nowrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap</b></p>
+        <p>height & width as it is. automatic adjust.</p>
+        <div id="coloumn_reverse_wrap" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p class="wrap_property"><b>Flex-wrap: wrap-reverse</b></p>
+        <p>height & width as it is. automatic adjust. <b>(cross axis reverse direction | Mirror of cross axis of wrap.)</b></p>
+        <div id="coloumn_reverse_wrap_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+</body>
+</html>

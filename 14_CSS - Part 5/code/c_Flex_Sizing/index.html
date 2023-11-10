@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Sizing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="starting">
+        <div class="fixed_on_screen">
+            <h1>Flex Sizing</h1>
+            <a class="navigation" href="#flex_basis">flex-basis</a>
+            <a class="navigation" href="#flex_grow_section">flex-grow</a>
+            <a class="navigation" href="#flex_shrink_section">flex-shrink</a>
+            <a class="navigation" href="#flex_shorthand">Flex Shorthand</a>
+        </div>
+    </section>
+    <hr>
+
+    <section id="flex_basis">
+        <h1>Flex-Basis</h1>
+        <p>It sets the initial main size of a flex item.</p>
+        <p><b>flex-basis: 100px</b></p>
+        <table border="1px">
+            <tr>
+                <th>Flex-Direction</th>
+                <th>Flex-Basis (Set size of item)</th>
+            </tr>
+            <tr>
+                <td>Row</td>
+                <td>Width</td>
+            </tr>
+            <tr>
+                <td>Coloumn</td>
+                <td>Height</td>
+            </tr>
+        </table>
+    
+        <!-- Flex-Basis: Row -->
+        <section id="flex_basis_row_section" class="section">
+            <div class="sticky_box">
+                <h2>flex-direction: row</h2>
+                <h2>flex-basis: 50px (Box 2)</h2>
+                <p class="change"><b>width of item change.</b></p>
+            </div>
+            <div id="flex_basis_row" class="container">
+                <div id="box1" class="item" style="background-color: hotpink;">Box 1</div>
+                <div id="box2" class="item" style="background-color: aqua; flex-basis: 50px;">Box 2</div>
+                <div id="box3" class="item" style="background-color: yellow;">Box 3</div>
+                <div id="box4" class="item" style="background-color: violet;">Box 4</div>
+            </div>
+        </section>
+    
+        <!-- Flex-Basis: Coloumn -->
+        <section id="flex_basis_coloumn_section" class="section">
+            <div class="sticky_box">
+                <h2>flex-direction: coloumn</h2>
+                <h2>flex-basis: 200px (Box 2)</h2>
+                <p class="change"><b>Height of item change.</b></p>
+            </div>
+            <div id="flex_basis_coloumn" class="container">
+                <div id="box1" class="item" style="background-color: hotpink;">Box 1</div>
+                <div id="box2" class="item" style="background-color: aqua; flex-basis: 200px;">Box 2</div>
+                <div id="box3" class="item" style="background-color: yellow;">Box 3</div>
+                <div id="box4" class="item" style="background-color: violet;">Box 4</div>
+            </div>
+        </section>
+        <hr>
+    </section>
+
+    <section id="flex_grow_section">
+        <h1>Flex-Grow</h1>
+        <p>It specifies how much of the flex container's remaining space should be assigned to the flex item's main size.</p>
+        
+        <section class="section">
+            <div class="sticky_box">
+                <h2>Initially.</h2>
+                <p class="change">Space is Remaning...</p>
+            </div>
+            <div id="flex_grow_row" class="container">
+                <div id="box1" class="item" style="background-color: hotpink;">Box 1</div>
+                <div id="box2" class="item" style="background-color: aqua;">Box 2</div>
+                <div id="box3" class="item" style="background-color: yellow;">Box 3</div>
+                <div id="box4" class="item" style="background-color: violet;">Box 4</div>
+            </div>
+        </section>
+    
+        <section class="section">
+            <div class="sticky_box">
+                <h2>Fill Remaing Spaces.</h2>
+                <h2>flex-grow: 2 (Box 2)</h2>
+                <h2>flex-grow: 1 (Box 4)</h2>
+                <p class="change">Remaing space is take by Box2 & Box1 (Box2 Gate double spaces compare to Box4)</p>
+            </div>
+            <div id="flex_grow_row" class="container">
+                <div id="box1" class="item" style="background-color: hotpink;">Box 1</div>
+                <div id="box2" class="item" style="background-color: aqua;flex-grow: 2;">Box 2</div>
+                <div id="box3" class="item" style="background-color: yellow;">Box 3</div>
+                <div id="box4" class="item" style="background-color: violet;flex-grow: 1;">Box 4</div>
+            </div>
+        </section>
+        <hr>
+    </section>
+
+
+    <section id="flex_shrink_section">
+        <h1>Flex-Shrink</h1>
+        <p>When item size (width or height) are overflow that time we use to shrink (decrease size of) particular item.</p>
+        <p><b>flex-wrap: nowrap</b> is neccesary to see changes of <b>flex-shrink</b></p>
+        
+            <section class="section">
+                <div class="sticky_box">
+                    <h2>Initially All Box width: 800px</h2>
+                    <p class="change">Overflow but nowrap...</p>
+                </div>
+                <div id="flex_grow_row" class="container">
+                    <div id="box1" class="item increase_width" style="background-color: hotpink;">Box 1</div>
+                    <div id="box2" class="item increase_width" style="background-color: aqua;">Box 2</div>
+                    <div id="box3" class="item increase_width" style="background-color: yellow;">Box 3</div>
+                    <div id="box4" class="item increase_width" style="background-color: violet;">Box 4</div>
+                </div>
+            </section>
+        
+            <section class="section">
+                <div class="sticky_box">
+                    <h2>Shrink Box4</h2>
+                    <h2>flex-grow: 2 (Box 3)</h2>
+                    <p class="change"><b>Box 3 size is 2 times decrease</b> compare to other Boxes.</p>
+                    <h2>flex-grow: 1.5 (Box 4)</h2>
+                    <p class="change"><b>Box 4 size is 1.5 times decrease</b> compare to other Boxes.</p>
+                </div>
+                <div id="flex_grow_row" class="container">
+                    <div id="box1" class="item increase_width" style="background-color: hotpink;">Box 1</div>
+                    <div id="box2" class="item increase_width" style="background-color: aqua;">Box 2</div>
+                    <div id="box3" class="item increase_width" style="background-color: yellow;flex-shrink: 2">Box 3</div>
+                    <div id="box4" class="item increase_width" style="background-color: violet;flex-shrink: 1.5;">Box 4</div>
+                </div>
+            </section>
+            <hr>
+    </section>
+
+    <section id="flex_shorthand">
+        <h1>Flex Shorthand</h1>
+        <img src="flex_shorthand.png" alt="flex_shorthand_image" style="margin: 0 auto;display: block;margin-top: 10px;">
+    </section>
+</body>
+</html>

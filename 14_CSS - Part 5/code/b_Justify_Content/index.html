@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="starting">
+        <div class="information">
+            <h1 style="text-align: center;text-decoration: underline;">Justify Content , Align Items & Align Content</h1>
+            <p><b>Justify-Content:</b> Tells how the browser <b>distributed space</b> between and around content items along the main-axis.</p>
+            <p><b>Align-Items:</b> Distributed our items along the cross axis.</p>
+            <p><b>Align-Content:</b> It sets the distribution of <b>space between and around</b> content items along a flexbox's cross-axis. (We can use this instead of <b>Align-items</b> because it hase <b>Justify-content</b> property also so we can apply in both main axis & cross axis. )</p>
+            <p><b>Align-Slef:</b> Aligns an item along the cross axis. (<b>Align Self is same as Align Items</b> but <b>Align self apply on individual items & Align Items apply on Group of items.</b> <b>Align Self > Align Items</b> )</p>
+            <table border="1px" style="margin: 10px auto;">
+                <tr>
+                    <th>Justify-Content</th>
+                    <th>Align-Items</th>
+                    <th>Align-Content</th>
+                    <th>Align-Self (Individual <sub>same as Align Items</sub> )</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><h3><a href="#flex_start_section" class="links">justify-content: flex-start;</a></h3></li>
+                            <li><h3><a href="#flex_end_section" class="links">justify-content: flex-end;</a></h3></li>
+                            <li><h3><a href="#center_section" class="links">justify-content: center;</a></h3></li>
+                            <li><h3><a href="#space_between_section" class="links">justify-content: space-between;</a></h3></li>
+                            <li><h3><a href="#space_around_section" class="links">justify-content: space-around;</a></h3></li>
+                            <li><h3><a href="#space_evenly_section" class="links">justify-content: space-evenly;</a></h3></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><h3>align-items: flex-start</h3></li>
+                            <li><h3>align-items: flex-end</h3></li>
+                            <li><h3>align-items: center</h3></li>
+                            <li><h3><a href="#baseline_section">align-items: baseline</a></h3></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><h3>align-content: flex-start</h3></li>
+                            <li><h3>align-content: flex-end</h3></li>
+                            <li><h3>align-content: center</h3></li>
+                            <li><h3>align-content: space-between</h3></li>
+                            <li><h3>align-content: space-around</h3></li>
+                            <li><h3>align-content: space-evenly</h3></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><h3>align-self: flex-start</h3></li>
+                            <li><h3><a href="#align_self_section">align-self: flex-end</a></h3></li>
+                            <li><h3><a href="#align_self_section">align-self: center</a></h3></li>
+                            <li><h3>align-items: baseline</h3></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        
+            <table border="1px" id="compare_table">
+                <tr>
+                    <th>Flex-Direction</th>
+                    <th>Justify-Content</th>
+                    <th>Align-Items</th>
+                    <th>Align-Content</th>
+                    <th>Align-Self (Individual Item)</th>
+                </tr>
+                <tr>
+                    <td>Row</td>
+                    <td>Main-axis (horzontal)</td>
+                    <td>Cross-axis (vertical)</td>
+                    <td><b>Cross-axis (vertical)</b> use Justify-Content values</td>
+                    <td>Cross-axis (vertical) <b>use for individual item.</b></td>
+                </tr>
+                <tr>
+                    <td>Coloumn</td>
+                    <td>Cross-axis (vertical)</td>
+                    <td>Main-axis (horzontal)</td>
+                    <td><b>Main-axis (horzontal)</b> use Justify-Content values</td>
+                    <td>Main-axis (horzontal) <b>use for individual item.</b></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- <a href="#starting" id="goToUp">Go To Top.</a> -->
+    <a href="#starting" id="goToUp">&uarr;</a>
+    <hr>        
+
+    <h2>Initially Outer Container set to...</h2>
+    <h3>display: flex</h3>
+    <hr>
+
+    <!-- Flex-Start -->
+    <section id="flex_start_section" class="section">
+        <h2 class="heading">Justify-content: flex-start;</h2>
+        <p>Assume: <b>flex-direction: row</b></p>
+        <div id="flex_start_row" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: row-reverse</b></p>
+        <div id="flex_start_row_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn</b></p>
+        <div id="flex_start_coloumn" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn-reverse</b></p>
+        <div id="flex_start_coloumn_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Flex-End -->
+    <section id="flex_end_section" class="section">
+        <h2 class="heading">Justify-content: flex-end;</h2>
+        <p>Assume: <b>flex-direction: row</b></p>
+        <div id="flex_end_row" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: row-reverse</b></p>
+        <div id="flex_end_row_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn</b></p>
+        <div id="flex_end_coloumn" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn-reverse</b></p>
+        <div id="flex_end_coloumn_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Center -->
+    <section id="center_section" class="section">
+        <h2 class="heading">Justify-content: center;</h2>
+        <p>Assume: <b>flex-direction: row</b></p>
+        <div id="center_row" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: row-reverse</b></p>
+        <div id="center_row_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn</b></p>
+        <div id="center_coloumn" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn-reverse</b></p>
+        <div id="center_coloumn_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Space-Between -->
+    <section id="space_between_section" class="section">
+        <h2 class="heading">Justify-content: space-between;</h2>
+        <p>Assume: <b>flex-direction: row</b></p>
+        <div id="space_between_row" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: row-reverse</b></p>
+        <div id="space_between_row_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn</b></p>
+        <div id="space_between_coloumn" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn-reverse</b></p>
+        <div id="space_between_coloumn_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Space-Around -->
+    <section id="space_around_section" class="section">
+        <h2 class="heading">Justify-content: space-around;</h2>
+        <p>Assume: <b>flex-direction: row</b></p>
+        <div id="space_around_row" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: row-reverse</b></p>
+        <div id="space_around_row_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn</b></p>
+        <div id="space_around_coloumn" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn-reverse</b></p>
+        <div id="space_around_coloumn_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Space-Evenly -->
+    <section id="space_evenly_section" class="section">
+        <h2 class="heading">Justify-content: space-evenly;</h2>
+        <p>Assume: <b>flex-direction: row</b></p>
+        <div id="space_evenly_row" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: row-reverse</b></p>
+        <div id="space_evenly_row_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn</b></p>
+        <div id="space_evenly_coloumn" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        
+        <p>Assume: <b>flex-direction: coloumn-reverse</b></p>
+        <div id="space_evenly_coloumn_reverse" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="baseline_section" class="section">
+        <h2 class="heading">align-items: base-Line</h2>
+        <p><b>Before: Content of box (texts) are not display in same line.</b></p>
+        <div id="before_baseline" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;height: 250px;font-size: 2.5em;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red; height: 56px;font-size: 36px;">red-7</div>
+        </div>
+        <p>After: applying Base Line. Content(text) are display in same line</p>
+        <div id="after_baseline" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;height: 250px;font-size: 2.5em;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red; height: 56px;font-size: 36px;">red-7</div>
+        </div>
+    </section>
+
+    <section id="align_self_section" class="section">
+        <h2 class="heading">align-self: center & align-self: flex-end</h2>
+        <p><b>Before.</b></p>
+        <div id="before_baseline" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+        <p><b>After</b>: applying <b>center & flex-end</b> <i><b>on green & orange color only.</b></i></p>
+        <div id="after_baseline" class="container">
+            <div style="background-color: violet;">violet-1</div>
+            <div style="background-color: indigo;">indigo-2</div>
+            <div style="background-color: blue;">blue-3</div>
+            <div style="background-color: green;align-self: center;">green-4</div>
+            <div style="background-color: yellow;">yellow-5</div>
+            <div style="background-color: orange;align-self: flex-end;">orange-6</div>
+            <div style="background-color: red;">red-7</div>
+        </div>
+    </section>
+</body>
+</html>

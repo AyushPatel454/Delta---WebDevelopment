@@ -1,0 +1,140 @@
+* {
+    text-align: center;
+}
+
+h2 {
+    width: 60%;
+    margin: 0 auto;
+    /* text-shadow: 4px 2px 8px grey;s */
+}
+
+.section {
+    position: relative;
+}
+
+.section h2 {
+    position: sticky;
+    top: 2px;
+    background-color: aqua;
+    border-radius: 25px;
+    padding: 8px;
+    color: black;
+}
+
+.section .wrap_property {
+    position: sticky;
+    top: 45px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.container_top {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    overflow: scroll;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container_top div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+}
+
+.container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* ===> Flex-Direction: row */
+/* ---> nowrap */
+#row_nowrap { 
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* ---> nowrap */
+#row_wrap {  
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* ---> wrap-reverse */
+#row_wrap_reverse {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+/* ===> Flex-Direction: row-reverse */
+/* ---> nowrap */
+#row_reverse_nowrap { 
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+/* ---> nowrap */
+#row_reverse_wrap {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+/* ---> wrap-reverse */
+#row_reverse_wrap_reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+/* ===> Flex-Direction: column */
+/* ---> nowrap */
+#coloumn_nowrap { 
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+/* ---> nowrap */
+#coloumn_wrap {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* ---> wrap-reverse */
+#coloumn_wrap_reverse {
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+/* ===> Flex-Direction: column-reverse */
+/* ---> nowrap */
+#coloumn_reverse_nowrap {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+/* ---> nowrap */
+#coloumn_reverse_wrap {    
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+/* ---> wrap-reverse */
+#coloumn_reverse_wrap_reverse {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+}
