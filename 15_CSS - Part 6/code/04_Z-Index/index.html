@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="intro">
+        <h1>Z - Index</h1>
+        <p>It decides the <b>stack level</b> of elements</p>
+        <p>Overlapping elements with a large z-index cover those with a smaller one.</p>
+        <p>By default all element z-index is 0 (autos)</p>
+        <p><b>Z-index is not work on position: static/default</b></p>
+        <img src="z_index.png" alt="z-index_image">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+    </section>
+
+    <hr>
+
+    <section id="one">
+        <h2>Box 2 overlap box1</h2>
+        <h3>position: relative;
+            bottom: 50px;</h3>
+        <div class="box one one2">1</div>
+        <div class="box two two2">2</div>
+        <div class="box three three2">3</div>
+    </section>
+
+    <hr>
+
+    <section id="two">
+        <h2>Box 1 overlap box2</h2>
+        <h3><i>Box: 1 -> </i>position: relative;
+            z-index: 1;</h3>
+        <h3><i>Box: 2 -> </i>position: relative;
+            bottom: 50px;</h3>
+        <div class="box one one2">1</div>
+        <div class="box two two2">2</div>
+        <div class="box three three2">3</div>
+    </section>
+
+    <hr>
+
+    <section id="three">
+        <h2>Box 2 overlap box1</h2>
+        <h3><i>Box: 1 -> </i>position: relative;
+            z-index: 1;</h3>
+        <h3><i>Box: 2 -> </i>position: relative;
+            bottom: 50px; <i>z-index: 2</i></h3>
+        <div class="box one one2">1</div>
+        <div class="box two two2">2</div>
+        <div class="box three three2">3</div>
+    </section>
+</body>
+</html>

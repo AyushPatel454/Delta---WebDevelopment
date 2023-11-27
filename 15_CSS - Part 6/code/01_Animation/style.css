@@ -1,0 +1,97 @@
+#example1 .box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    
+    /* animation: fontAnimation; */
+    /* animation: colorAnimation; */
+    animation: widthAnimation;
+
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+
+    /* animation-direction */
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+    /* animation-direction: alternate-reverse; */
+
+    /* Short Hand */
+    animation: widthAnimation 2s ease-in 1s infinte alternate;
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimation {
+    from {
+        background-color: pink;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes widthAnimation {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 300px;
+        border-radius: 0 50px 0 50px;
+    }
+}
+
+.temp {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: all 1s;
+}
+.temp:hover {
+    border-radius: 0 50px;
+    animation: tempAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes tempAnimation {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: pink;
+        border-radius: 50% 50% 50% 0;
+    }
+}
+
+#percentage .box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    
+    animation: colAnimate 3s ease-in 1s infinite normal;
+}
+
+@keyframes colAnimate {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: blue;
+    }
+}
