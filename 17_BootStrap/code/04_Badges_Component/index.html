@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges - Bootstrap</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://getbootstrap.com/docs/5.3/components/badge/">Badges - Bootstrap</a></h1>
+        <img src="1.png" alt="badge_img">
+        <h2>Base class: badge</h2>
+        <span class="badge bg-danger">new</span>
+        <h3>Example heading <span class="badge bg-primary">20+</span></h3>
+        <hr>
+        
+        <h2>Badge inside buttons.</h2>
+        <img src="2_button_badge.png" alt="button_badge_img" srcset="">
+        <button type="button" class="btn btn-primary">
+            Followers <span class="badge bg-danger">100+</span>
+        </button>
+        <button type="button" class="btn btn-primary">
+            Notifications <span class="badge text-bg-secondary">4</span>
+        </button>
+        <hr>
+
+        <h2>Positioned Badge</h2>
+        <img src="3_positioned_badge.png" alt="positioned_badge_img">
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+        <hr>
+
+        <h2>Pill Badge (rounded)</h2>
+        <img src="4_pill_badge.png" alt="pill_badge_img">
+        <span class="badge rounded-pill text-bg-primary">Primary</span>
+        <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+        <span class="badge rounded-pill text-bg-success">Success</span>
+        <span class="badge rounded-pill text-bg-danger">Danger</span>
+        <span class="badge rounded-pill text-bg-warning">Warning</span>
+        <span class="badge rounded-pill text-bg-info">Info</span>
+        <span class="badge rounded-pill text-bg-light">Light</span>
+        <span class="badge rounded-pill text-bg-dark">Dark</span>
+    </div>
+    
+    
+    <!-- Bootstrap - JavaScript Link -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
