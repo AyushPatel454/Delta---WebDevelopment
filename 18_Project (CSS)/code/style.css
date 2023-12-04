@@ -201,12 +201,6 @@ a {
     margin-top: 0;
 }
 
-@media (max-width: 1000px) {
-    .hide {
-        display: none;
-    }
-}
-
 /* ---> Card Styling */
 .card {
     background-color: #232323;
@@ -215,6 +209,16 @@ a {
     padding: 1rem;
     margin-left: 1.5rem;
     margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    background-color: #343434;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
 
 .cards-container {
@@ -228,6 +232,7 @@ a {
 .card-img {
     width: 100%;
     border-radius: 0.5rem;
+    transition: all 0.3s;
 }
 
 .card-title {
@@ -399,4 +404,157 @@ a {
     background-color: #1bd760;
     border-radius: 50%;
     margin-top: -6px;
+}
+
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .sidebar {
+    width: auto;
+}
+
+#check:checked ~ .sidebar .none {
+    display: none;
+}
+
+.hemburger {
+    background-color: #121212;
+    border-radius: 1rem;
+    line-height: 2.75rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.hemburger i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+    line-height: 2.75rem;
+}
+
+.hemburger p {
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.hemburger :hover {
+    opacity: 1;
+}
+
+/* Media Query */
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+
+    .song-name .card-title, .song-name .card-info {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .volume_range {
+        width: 30%;
+    }
+
+    .progress-bar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 770px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .library .options .icons {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .cards-container {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .cards-container .card {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 620px) {
+    .sidebar {
+        width: 60vw;
+    }
+    /* .none {
+        display: none;
+    } */
+    .song_icons {
+        display: none;
+    }
+    .sticky-nav-icons {
+        display: none;
+    }
+    .dark-badge {
+        
+    }
+    .player-control-icon {
+        margin-right: 1rem;
+    }
+    .progress-bar {
+        width: 60%;
+    }
+    .volume_range {
+        display: none;
+    }
+    .main_content {
+        padding: 0 0.5rem 0 0.5rem;
+    }
+    .hemburger {
+        padding: 0.5rem 0.5rem;
+    }
+    .sidebar .nav {
+        padding: 0.5rem 0.5rem;
+    }
+    .library {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .player {
+        flex: 1;
+    }
+    .controls {
+        display: none;
+    }
+    .curr-time, .tot-time {
+        font-size: 0.7rem;
+    }
+    .sticky-nav-options  {
+        justify-content: space-around;
+    }
+    .sticky-nav {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .progress-bar {
+        width: 50%;
+    }
+    .song-name {
+        display: none;
+    }
+    .progress-bar {
+        width: 70%;
+    }
+    .album {
+        width: 14%;
+    }
 }

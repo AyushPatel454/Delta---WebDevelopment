@@ -19,19 +19,28 @@
 </head>
 <body>
     <div class="main">
+        <!-- Checkbox check. -->
+        <input type="checkbox" id="check" />
         <!-- Side Bar -->
         <div class="sidebar">
+            <!-- Options -->
+            <label for="check">
+                <div class="hemburger">
+                    <i class="fa-solid fa-bars"></i>
+                    <p class="none">Close</p>
+                </div>
+            </label>
             <!-- Nav Bar -->
             <div class="nav">
                 <div class="nav-option" style="opacity: 1;">
                     <!-- Home Icon -->
                     <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
+                    <a href="#" class="none">Home</a>
                 </div>
                 <div class="nav-option">
                     <!-- Search Icon -->
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
+                    <a href="#" class="none">Search</a>
                 </div>
             </div>
 
@@ -42,15 +51,15 @@
                     <div class="lib-option nav-option">
                         <!-- Home Icon -->
                         <img src="./assets/library_icon.png" alt="library_icon">
-                        <a href="#">Your Library</a>
+                        <a href="#" class="none">Your Library</a>
                     </div>
-                    <div class="icons">
+                    <div class="icons none">
                         <i class="fa-solid fa-plus"></i>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
                 <!-- Lib-Boxes -->
-                <div class="lib-box">
+                <div class="lib-box none">
                     <!-- Box-1 -->
                     <div class="box">
                         <!-- Pera-1 -->
@@ -170,7 +179,7 @@
                     </div>
                     <!-- Song Name -->
                     <div class="song-name">
-                        <p class="card-title" style="">Daylight</p>
+                        <p class="card-title">Daylight</p>
                         <p class="card-info">David Kushner</p>
                     </div>
                 </div>
@@ -184,11 +193,11 @@
             <!-- Player -->
             <div class="player">
                 <div class="player-controls">
-                    <img src="./assets/player_icon1.png" alt="" class="player-control-icon">
-                    <img src="./assets/player_icon2.png" alt="" class="player-control-icon">
-                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon" style="height: 2rem;opacity: 1;">
-                    <img src="./assets/player_icon4.png" alt="" class="player-control-icon">
-                    <img src="./assets/player_icon5.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon1.png" alt="" class="player-control-icon one">
+                    <img src="./assets/player_icon2.png" alt="" class="player-control-icon two">
+                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon three" style="height: 2rem;opacity: 1;">
+                    <img src="./assets/player_icon4.png" alt="" class="player-control-icon four">
+                    <img src="./assets/player_icon5.png" alt="" class="player-control-icon five">
                 </div>
                 <div class="playback-bar">
                     <span class="curr-time">00:00</span>
