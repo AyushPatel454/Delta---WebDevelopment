@@ -483,7 +483,9 @@ a {
         overflow-x: scroll;
     }
     .cards-container .card {
-        min-width: 150px;
+        min-width: 222px;
+        margin-left: 0;
+        margin-right: 1rem;
     }
 }
 
@@ -501,7 +503,12 @@ a {
         display: none;
     }
     .dark-badge {
-        
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        height: auto;
+    }
+    .user-icon {
+        font-size: 1.5rem;
     }
     .player-control-icon {
         margin-right: 1rem;
@@ -541,6 +548,7 @@ a {
     }
     .sticky-nav {
         display: block;
+        overflow: hidden;
     }
 }
 
